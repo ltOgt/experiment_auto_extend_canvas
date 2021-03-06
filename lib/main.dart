@@ -61,17 +61,17 @@ class Canvas extends StatelessWidget {
 
     return Stack(
       children: [
-        if (wTemp != null)
-          Container(
-            width: wTemp,
-            height: hTemp,
-            color: Colors.grey,
-          ),
         Container(
           width: w,
           height: h,
           color: Colors.green,
         ),
+        if (wTemp != null)
+          Container(
+            width: wTemp,
+            height: hTemp,
+            color: Colors.grey.withAlpha(125),
+          ),
       ],
     );
   }
